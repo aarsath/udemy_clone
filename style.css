@@ -17,6 +17,10 @@ body {
     border-bottom: black 1px solid;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 
 
 
@@ -43,6 +47,7 @@ body {
 
     border: none;
     font-size: 16px;
+    background-color: transparent;
 
 
 }
@@ -56,6 +61,23 @@ body {
     gap: 10px;
     align-items: center;
 
+}
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: black solid 1px;
+    width: 100px;
+    top:150%;
+    right: 0;
+    padding: 20px;
+    display: none;
 }
 
 .Categories {
@@ -71,9 +93,23 @@ body {
     padding: 10px;
     border-radius: 30px;
 }
+.sale-image{
+    position: relative;
+}
 
 .sale-image img {
     width: 100%;
+    
+}
+
+.sale-image__content{
+    background-color: white;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 2%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
 }
 
 .recommended {
