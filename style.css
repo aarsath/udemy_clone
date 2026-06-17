@@ -58,9 +58,17 @@ body {
 
 .Navbar__s3 {
     display: flex;
-    gap: 10px;
+    gap: 15ppx;
     align-items: center;
 
+}
+.Navbar__s4 img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.Navbar__s4{
+    display: none;
 }
 .mylearning{
     position: relative;
@@ -151,7 +159,9 @@ body {
 }
 
 .recommended__card {
-    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 10px;
 
 }
 
@@ -213,5 +223,24 @@ body {
     display: flex;
     justify-content: space-between;
 }
+@media screen and (max-width: 800px){
+    body{
+        font-size: 10px;
+
+    }
     
-    
+}
+@media screen and (max-width: 600px) {
+    .recommended__card{
+        flex-basis: 40%;
+    }
+    .Categories{
+        display: none;
+    }
+    .Navbar__s2,.Navbar__s3{
+        display: none;
+    }
+    .Navbar__s4{
+        display: block;
+    }
+}
